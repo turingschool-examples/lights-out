@@ -10,14 +10,14 @@ describe('Board', function () {
   it('should have a property called board that is an array', function () {
     const board = new Board();
     assert(board.board);
-    assert(Array.isArray(board.board));
+    assert.isArray(board.board);
   });
 
   it('should contain five arrays as rows', function () {
     const board = new Board();
     assert.equal(board.board.length, 5);
     board.board.forEach(function (row) {
-      assert(Array.isArray(row));
+      assert.isArray(row);
     });
   });
 
